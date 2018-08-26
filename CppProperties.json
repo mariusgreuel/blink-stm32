@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "name": "STM32 Blue Pill",
+      "includePath": [
+        "${env.GNU_TOOLCHAIN_STM32}\\arm-none-eabi\\include\\**",
+        "${env.GNU_TOOLCHAIN_STM32}\\lib\\gcc\\arm-none-eabi\\7.3.1\\include",
+        "${env.GNU_TOOLCHAIN_STM32}\\lib\\gcc\\arm-none-eabi\\7.3.1\\include-fixed",
+        "${workspaceRoot}/drivers/STM32F1xx/include",
+        "${workspaceRoot}/drivers/CMSIS/include",
+        "${workspaceRoot}/**"
+      ],
+      "defines": [
+        "__GNUC__=5",
+        "__STDC_LIMIT_MACROS",
+        "BOARD_BluePill",
+        "STM32F103xB"
+      ],
+      "intelliSenseMode": "linux-gcc-arm",
+      "compilerSwitches": "--std=c++11"
+    }
+  ]
+}
